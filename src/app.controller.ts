@@ -18,4 +18,12 @@ export class AppController {
     getProfile(@Request() req){
         return req.user;
     }
+
+    /*
+    In order to test our route we'll have our /auth/login route simply return the user for now.
+
+    This also lets us demonstrate another Passport feature: 
+    "Passport automatically creates a user object", based on the value we return from the validate() method, 
+    and assigns it to the Request object as req.user. 
+    */
 }
